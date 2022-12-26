@@ -133,7 +133,6 @@ body{
 }
 .feature-list{
     display: flex;
-    display: flex;
     flex-wrap: wrap;
 }
 .feature-list-item{
@@ -274,6 +273,10 @@ h4{
 .about-us{
     display: flex;
 }
+.about-us-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
 .about-us-item + .about-us-item{
     margin-left: 30px;
 }
@@ -284,45 +287,91 @@ h4{
 }
 .icon-feature{
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 100px;
     padding-right: 100px;
     width: 270px;
     height: 120px;
-    fill: #F5F4FA;
+    background-color: #F5F4FA;
     margin-bottom: 30px;
 }
 .icon-social{
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
     padding: 0;
     border: 0;
     width: 44px;
-        height: 44px;
-        border-radius: 50%;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    
+}
+.icon-social + .icon-social{
+    margin-left: 10px;
 }
 .icon-social:hover{
     background-color: var(--accent-text-color);
 }
 .icon-instagram{
     width: 44px;
-        height: 44px;
-        border-radius: 50%;
+    height: 44px;
     padding: 12px;
-    
-    background-size: contain;
+    fill: currentColor;
 }
-.inst{
-    fill: #AFB1B8;
-}
-.inst:hover{
+.icon-instagram:hover{
     fill: #ffffff;
 }
 
+/* section 5 */
+.section-our-clients{
+    color: var(--title-text-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients{
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.company-container{
+    display: flex;
+    max-width: 1280px;
+    margin-top: 50px;
+}
+.company{
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+
+}
+.icon-company{
+    display: inline-flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+}
+.company + .company{
+    margin-left: 30px;
+}
+.company:hover{
+    border: solid 1px var(--accent-text-color);
+}
+.icon-company:hover{
+    fill: var(--accent-text-color);
+}
 
 /* footer */
 .footer{
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -362,13 +411,56 @@ h4{
     letter-spacing: 0.03em;
 }
 .footer-container {
+    display: flex;
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+.footer-second-container{
+    margin-left: 94px;
+}
+.footer-social{
+    color: #fff;
+    margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+.icon-social-footer {
+    display: inline-flex;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
 
+}
+
+.icon-social-footer+.icon-social-footer {
+    margin-left: 10px;
+}
+
+.icon-social-footer:hover {
+    background-color: var(--accent-text-color);
+}
+
+.icon-instagram-footer {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: currentColor;
+}
+
+.icon-instagram-footer:hover {
+    fill: #ffffff;
+}
 /* potfolio */
 .portfolio-section{
     padding-top: 94px;
@@ -393,6 +485,9 @@ h4{
 .button-filter:hover, .button-filter:focus{
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .title-example{
     margin-bottom: 4px;
@@ -435,6 +530,11 @@ h4{
     margin-right: 30px;
     margin-bottom: 30px;
     outline: 1px solid #EEEEEE;
+}
+.example-element:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .example-element:nth-child(3n){
     margin-right: 0;
