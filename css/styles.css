@@ -175,6 +175,7 @@ h4{
 .about-us-container{
     padding-top: 94px;
 }
+
 .section-hero{
     max-width: 1680px;
     padding-top: 200px;
@@ -285,6 +286,7 @@ h4{
     padding-bottom: 30px;
     background-color: #ffffff;
 }
+
 .icon-feature{
     display: flex;
     padding-top: 25px;
@@ -296,15 +298,20 @@ h4{
     background-color: #F5F4FA;
     margin-bottom: 30px;
 }
+.title-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .icon-social{
-    display: inline-flex;
-    text-align: center;
+        display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: 0;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
     color: #AFB1B8;
+    margin-top: 16px;
     
 }
 .icon-social + .icon-social{
@@ -313,15 +320,20 @@ h4{
 .icon-social:hover{
     background-color: var(--accent-text-color);
 }
+.icon-social:focus {
+    background-color: var(--accent-text-color);
+}
 .icon-instagram{
-    width: 44px;
-    height: 44px;
-    padding: 12px;
+    /* display: flex;
+    justify-content: center; */
+        width: 44px;
+            height: 44px;
     fill: currentColor;
 }
-.icon-instagram:hover{
+.icon-instagram:hover, .icon-instagram:focus {
     fill: #ffffff;
 }
+
 
 /* section 5 */
 .section-our-clients{
@@ -330,16 +342,15 @@ h4{
     padding-bottom: 94px;
 }
 .clients{
-font-weight: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .company-container{
-    display: flex;
+    display: block;
     max-width: 1280px;
-    margin-top: 50px;
 }
 .company{
     display: flex;
@@ -347,10 +358,16 @@ font-weight: 700;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-
+}
+.company-list{
+    display: flex;
+    margin-top: 50px;
+}
+.company-list-element + .company-list-element{
+    margin-left: 30px;
 }
 .icon-company{
-    display: inline-flex;
+    display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 32px;
@@ -358,9 +375,6 @@ font-weight: 700;
     width: 170px;
     height: 92px;
     fill: #AFB1B8;
-}
-.company + .company{
-    margin-left: 30px;
 }
 .company:hover{
     border: solid 1px var(--accent-text-color);
@@ -419,6 +433,7 @@ font-weight: 700;
     margin-right: auto;
 }
 .footer-second-container{
+    display: block;
     margin-left: 94px;
 }
 .footer-social{
@@ -430,9 +445,13 @@ font-weight: 700;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
+.footer-social-list{
+    display: flex;
+}
 .icon-social-footer {
-    display: inline-flex;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: 0;
     width: 44px;
@@ -443,7 +462,7 @@ font-weight: 700;
 
 }
 
-.icon-social-footer+.icon-social-footer {
+.footer-social-list-item + .footer-social-list-item {
     margin-left: 10px;
 }
 
@@ -452,9 +471,9 @@ font-weight: 700;
 }
 
 .icon-instagram-footer {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
